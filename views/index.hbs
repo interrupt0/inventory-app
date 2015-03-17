@@ -1,2 +1,18 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Inventory <a class="add contain" href="#">+</a></h1>
+
+<div class="content">
+	<ul class="items">
+	{{#each items}}
+		<li>
+			<div class="actions">
+				<a href="#" class="edit button">edit</a>
+				<spam class="delete">&times;</spam>
+			</div>
+			<div class="info">
+				<header class="name">{{name}}</header>
+				<p class="description">{{description}}</p>
+			</div>
+		</li>
+	{{/each}}
+	</ul>
+</div>
